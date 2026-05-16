@@ -1,0 +1,14 @@
+
+Baseline (raw sequence + ridge heads)
+split          class_acc   param_mae  active_mae   radial_rmse    geo_rmse
+val               0.6083      0.4859      0.8636        0.0018      0.0018
+iid_test          0.6850      0.4632      0.8317        0.0016      0.0016
+interp_test       0.6700      0.4077      0.7107        0.0009      0.0009
+ood_test          0.4850      6.6136     11.4292        0.1790      0.1790
+
+LSM features + ridge heads
+split          class_acc   param_mae  active_mae   radial_rmse    geo_rmse
+val               0.9417      0.5752      0.9831        0.0359      0.0359
+iid_test          0.9650      0.5899      1.0404        0.0366      0.0366
+interp_test       0.8350      0.6383      1.0557        0.0371      0.0371
+ood_test          0.5800      1.3922      2.2319        0.6693      0.6693
