@@ -3,6 +3,7 @@
 ## Overview
 
 This project demonstrates that a **Liquid State Machine (LSM)** can learn and recognize special polar curves and polar conics from sequential data.
+It now includes a **static web app** for interactively exploring how the LSM learns each formula family.
 
 **Implemented families:**
 - limacon
@@ -21,6 +22,7 @@ This project demonstrates that a **Liquid State Machine (LSM)** can learn and re
 
 - Python 3.x
 - NumPy
+- Node.js 20+ (for the web app)
 
 Install:
 
@@ -32,6 +34,24 @@ pip install numpy
 
 ```bash
 python3 simple_lsm.py
+```
+
+## Interactive Web App
+
+The web app lives in `apps/web` and runs entirely in the browser (GitHub Pages friendly).
+
+```bash
+cd apps/web
+npm install
+npm run precompute   # generate fallback runs for heavy configs
+npm run dev
+```
+
+Build for static hosting:
+
+```bash
+cd apps/web
+npm run build
 ```
 
 By default, the script will:
